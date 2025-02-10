@@ -1,0 +1,32 @@
+.top_section {
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    margin: 1% 1%;
+    
+}
+
+@keyframes moveSideToSide {
+    0% { transform: translateX(0) scale(1.1) rotate(0deg); }
+    50% { transform: translateX(950px) scale(0.7) rotate(180deg); } 
+    100% { transform: translateX(0) scale(1.1) rotate(-0deg); }
+
+  }
+  
+
+.wonder_box{
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: 1% 1%;
+    animation: moveSideToSide 0.5s infinite;
+}
+
+.no-animation * {
+    animation: none !important;
+    transition: none !important;
+}
