@@ -1,3 +1,35 @@
+@keyframes autism {
+    0% { background-color: red;}
+    10% {background-color: yellow;}
+    20% {background-color: green;}
+    30% {background-color: blue;}
+    40% {background-color: purple;}
+    50% {background-color: pink;}
+    60% {background-color: orange;}
+    70% {background-color: brown;}
+    80% {background-color: black;}
+    90% {background-color: white;}
+    100% {background-color: indianred;}
+}
+
+@keyframes background-colours {
+    0% {background-color: green;}
+    10% {background-color: orange;}
+    20% {background-color: red;}
+    30% {background-color: blue;}
+    40% {background-color: purple;}
+    50% {background-color: pink;}
+    60% {background-color: orange;}
+    70% {background-color: brown;}
+    80% {background-color: black;}
+    90% {background-color: white;}
+    100% {background-color: indianred;}
+}
+
+body {
+    animation: background-colours 0.25s infinite;
+}
+
 .top_section {
     background-color: red;
     padding: 20px;
@@ -5,6 +37,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 95%;
     margin: 1% 1%;
+    animation: autism 0.25s infinite;
     
 }
 
@@ -17,16 +50,24 @@
   
 
 .wonder_box{
-    background-color: lightcyan;
+    background-color: yellow;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 40%;
+    width: 95%;
     margin: 1% 1%;
-    animation: moveSideToSide 0.5s infinite;
+    animation: moveSideToSide 0.25s infinite, autism 0.25s infinite;
+}
+
+.button_location {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
 }
 
 .no-animation * {
-    animation: none !important;
     transition: none !important;
+    animation: none !important;
 }
+
