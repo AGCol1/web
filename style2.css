@@ -1,9 +1,17 @@
+@keyframes name_animation {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
 .heading_name {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
+    top: 10%;
+    left: 50%;
+    animation: name_animation 2s; 
   }
 
 body {
-    background: white !important;
+    background: lightcyan !important;
 }
