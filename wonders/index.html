@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Wonders Of The World</title>
+</head>
+
+<body class="body_main">
+ 
+    <div class="top_section">
+        <h1>7 Wonders Of The World</h1>
+        <p>Explore the 7 wonders of the world</p>
+    </div>
+
+    <div class="feedback">
+        <button id="feedbackBtn">Feedback</button>
+    </div>
+
+    <div id="feedbackForm" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required><br><br>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required><br><br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" required></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        var modal = document.getElementById("feedbackForm");
+        var btn = document.getElementById("feedbackBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <div class="wonder_box">
+        <a href="china.html" class="no-link-style">
+        <h3>The Great Wall Of China</h3>
+        <p>The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other
+            materials, generally built along an east-to-west line across the historical northern borders of China to
+            protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the
+            Eurasian Steppe.</p>
+        </a>
+    </div>
+
+    <div class="wonder_box">
+        <a href="petra.html" class="no-link-style">
+        <h3>The Petra</h3>
+        <p>Petra originally known to its inhabitants as Raqmu, is a historical and archaeological city in southern
+            Jordan. Petra lies around Jabal Al-Madbah in a basin surrounded by mountains which form the eastern flank of
+            the Arabah valley that runs from the Dead Sea to the Gulf of Aqaba.</p>
+        </a>
+    </div>
+
+    <div class="wonder_box">
+        <a href="colosseum.html" class="no-link-style">
+        <h3>The Colosseum</h3>
+        <p>The Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum.
+            It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the
+            world today, despite its age.</p>
+        </a>
+    </div>
+    <div class="wonder_box">
+        <a href="tajmahal.html" class="no-link-style">
+        <h3>The Taj Mahal</h3>
+        <p>The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of
+            Agra. It was commissioned in 1631 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife,
+            Mumtaz Mahal; it also houses the tomb of Shah Jahan himself.</p>
+        </a>
+    </div>
+    <div class="wonder_box">
+        <a href="christ.html" class="no-link-style">
+        <h3>The Christ The Redeemer</h3>
+        <p>Christ the Redeemer is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French
+            sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French
+            engineer Albert Caquot. Romanian sculptor Gheorghe Leonida fashioned the face.</p>
+        </a>
+    </div>
+    <div class="wonder_box">
+        <a href="machu.html" class="no-link-style">
+        <h3>The Machu Picchu</h3>
+        <p>Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a
+            2,430-meter (7,970 ft) mountain ridge. It is located in the Machupicchu District within Urubamba Province
+            above the Sacred Valley, which is 80 kilometers (50 mi) northwest of Cuzco.</p>
+        </a>
+    </div>
+    <div class="wonder_box">
+        <a href="chichen.html" class="no-link-style">
+        <h3>The Chichen Itza</h3>
+        <p>Chichen Itza was a large pre-Columbian city built by the Maya people of the Terminal Classic period. The
+            archaeological site is located in Tinúm Municipality, Yucatán State, Mexico. Chichen Itza was a major focal
+            point in the Northern Maya Lowlands from the Late Classic (c. AD 600–900) through the Terminal Classic (c.
+            AD 800–900) and into the early portion of the Postclassic period (c. AD 900–1200).</p>
+        </a>
+    </div>
+    <div class="button_location">
+        <button id="toggleBtn">Toggle Animation</button>
+
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
