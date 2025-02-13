@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Wall Of China</title>
+</head>
+<body class="china_body">
+
+<div class="china_main">
+CTRL + V in a new tab to read. 
+<div class="china_button_location">
+    <div class="server-ip" onclick="copyToClipboard(`https://en.wikipedia.org/wiki/Great_Wall_of_China`)">
+        Click to read. 
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Ctrl + A to read');
+            });
+        }
+    </script>
+</script> 
+</div>
+<button id="gobackBtn" onclick="location.href='index.html'">Go Back</button>
+
+</body>
+</html>
