@@ -3,3 +3,7 @@
     font-weight: 900;
     text-transform: uppercase;
   }
+
+body {
+    background: white !important;
+}
