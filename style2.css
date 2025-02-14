@@ -1,4 +1,4 @@
-@keyframes name_animation {
+@keyframes animation_opacity {
     0% { opacity: 0; }
     100% { opacity: 1;}
 }
@@ -7,11 +7,57 @@
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
-    top: 10%;
+    top: 2%;
     left: 50%;
-    animation: name_animation 2s; 
-  }
+    transform: translateX(-50%);
+    animation: animation_opacity 6s; 
+    position: absolute; 
+}
 
 body {
-    background: lightcyan !important;
+    background: rgb(140, 245, 171) !important;
+}
+
+.code_input {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 12%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    animation: animation_opacity 6s;
+}
+
+.personal_projects {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 12%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    animation: animation_opacity 6s;
+}
+
+.box { 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    animation: animation_opacity 6s;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px 0; 
+    color: #333;
+    width: auto; 
+    height: auto;
 }
