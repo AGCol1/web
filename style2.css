@@ -1,63 +1,49 @@
 @keyframes animation_opacity {
-    0% { opacity: 0; }
-    100% { opacity: 1;}
+    0% { 
+        opacity: 0; 
+        transform: translateY(100%);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
 }
 
 .heading_name {
+    color: #fff;
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
     top: 2%;
     left: 50%;
     transform: translateX(-50%);
-    animation: animation_opacity 6s; 
     position: absolute; 
 }
 
 body {
-    background: rgb(140, 245, 171) !important;
+    background: rgb(15, 17, 15) !important;
 }
 
 .code_input {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
-    color: #333;
-    background-color: rgb(100, 236, 141);
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: 12%;
-    box-sizing: border-box;
-    margin: 10px 0;
-    animation: animation_opacity 6s;
-}
-
-.personal_projects {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
-    color: #333;
-    background-color: rgb(100, 236, 141);
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    width: 12%;
-    box-sizing: border-box;
-    margin: 10px 0;
-    animation: animation_opacity 6s;
+    color: #fff;
+    background-color: rgb(61, 65, 62);
+    animation: animation_opacity 3s;
 }
 
 .box { 
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    animation: animation_opacity 6s;
-    background-color: rgb(100, 236, 141);
-    border: 1px solid #ccc;
+    animation: animation_opacity 3s;
+    background-color: rgb(61, 65, 62);
+    border: 1px solid black;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     box-sizing: border-box;
     margin: 10px 0; 
-    color: #333;
+    color: #fff;
     width: auto; 
     height: auto;
 }
@@ -66,7 +52,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     color: #fff;
-    background-color: rgb(124, 209, 150);
+    background-color: rgb(133, 133, 133);
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
@@ -75,5 +61,64 @@ body {
 }
 
 .buttons:hover {
-    background-color: #6af159;
+    background-color: #ffffff;
 }
+
+.about-me {
+    position: absolute; 
+    top: 10%;
+    left: 36.3%;
+}
+
+.school_projects {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: rgb(61, 65, 62);
+    animation: animation_opacity 3s;
+    position: absolute; 
+    top: 35%;
+    left: 36%; 
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    height: 25% 
+
+}
+
+.personal_projects {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: rgb(61, 65, 62);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    width: 12%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    animation: animation_opacity 3s;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    height: 25%; 
+    animation: animation_opacity 3s;
+}
+
+.school_box {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(61, 65, 62);
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    color: #fff;
+    width: 30%;
+    height: auto;
+    animation: animation_opacity 3s;
+}
+
