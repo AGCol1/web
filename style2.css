@@ -22,7 +22,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: rgb(100, 236, 141);
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -36,7 +36,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: rgb(100, 236, 141);
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -51,7 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     animation: animation_opacity 6s;
-    background-color: #f4f4f4;
+    background-color: rgb(100, 236, 141);
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 5px;
@@ -60,4 +60,20 @@ body {
     color: #333;
     width: auto; 
     height: auto;
+}
+
+.buttons {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(124, 209, 150);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons:hover {
+    background-color: #6af159;
 }
