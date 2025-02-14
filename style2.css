@@ -125,7 +125,7 @@ body {
 
 @keyframes typing {
     from { width: 0ch; }
-    to { width: 14ch; } /* Adjust the value based on the length of your text */
+    to { width: 14ch; } 
 }
 
 @keyframes blink-caret {
