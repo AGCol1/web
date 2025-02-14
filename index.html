@@ -11,14 +11,25 @@
         Alfie Colclough
         </div>
 
-    <div class="projects">
-        <a href="https://agcol.uk/wonders/index.html">
-        <div class="project"> 
-            <h3>7 Wonders of the World</h3>
-            <p>Creating the worst website utilizing HTML, CSS & JS</p>
-        </div> 
-        </a> 
+    <div class="school_projects">
+        <a href="https://agcol.uk/school_projects.html">School Projects</a>
+    <div class="code_input">
+        <label for="code">Enter Code:</label>
+        <input type="text" id="code" name="code">
+        <button onclick="submitCode()">Submit</button>
     </div>
+    <script>
+        function submitCode() {
+            var code = document.getElementById("code").value;
+            // Add your JavaScript code here to handle the entered code
+            if (code === "1234") {
+                alert("Code accepted!");
+            } else {
+                alert("Invalid code. Please try again.");
+            }
+            console.log("Entered code: " + code);
+        }
+    </script>
 
 </body>
 </html>
