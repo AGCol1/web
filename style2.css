@@ -140,3 +140,8 @@ body {
     border-right: .15em solid white;
     animation: typing 1s steps(14, end), blink-caret .75s step-end infinite;
 }
+
+.warning {
+    color: red;
+    font-size: 1.2rem; 
+}
