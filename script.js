@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     typeWriter();
 });
 
-document.addEventListener("wonders_page").addEventListener("click", function() {
+function wondersPage () {
     alert("Please be aware this page contains flashing images... Press OK to continue");
     window.location.href = "https://agcol.uk/wonders/index";
-});
+    }
