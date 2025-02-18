@@ -1,6 +1,11 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
 function submitCode() {
     var code = document.getElementById("code").value;
     if (code === "1234") {
+        alert("Code accepted. Click Ok to view...");
         window.location.href = "https://agcol.uk/school_projects";
     } else {
         alert("Invalid code. Please try again.");
@@ -22,4 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     typeWriter();
+});
+
+document.addEventListener("wonders_page").addEventListener("click", function() {
+    alert("Please be aware this page contains flashing images... Press OK to continue");
+    window.location.href = "https://agcol.uk/wonders/index";
 });
