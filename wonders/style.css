@@ -44,9 +44,9 @@
 @keyframes moveSideToSide {
     0% { transform: translateX(0) scale(1.1) rotate(0deg); }
     50% { transform: translateX(950px) scale(0.7) rotate(180deg); } 
-    100% { transform: translateX(0) scale(1.1) rotate(-0deg); }
+    100% { transform: translateX(0) scale(1.1) rotate(360); }
 
-  }
+}
   
 
 .wonder_box{
@@ -56,7 +56,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 95%;
     margin: 1% 1%;
-    animation: moveSideToSide 0.25s infinite, flash 0.25s infinite;
+    animation: moveSideToSide 1s infinite, flash 1s infinite;
 }
 
 .button_location {
