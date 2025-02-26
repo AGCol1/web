@@ -185,6 +185,6 @@ body {
         display: flex; 
     }
     .school_projects {
-        display: flex; 
+        display: center; 
     }
 }
