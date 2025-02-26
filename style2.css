@@ -108,6 +108,34 @@ body {
 
 }
 
+.personal_projects:hover {
+    cursor: pointer; 
+    transition: all 0.1s;
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 6px rgb(250, 242, 242, 0.069);
+}
+
+.personal_projects:active {
+    cursor: pointer; 
+    scale: 0.95; 
+    transform: all 0.1s;
+}
+
+.buttons:hover {
+    cursor: pointer; 
+    transition: all 0.1s;
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 6px rgb(250, 242, 242, 0.069);
+}
+
+.buttons:active {
+    cursor: pointer; 
+    transition: all 0.1s;
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 6px rgb(250, 242, 242, 0.069);
+
+}
+
 .project_box {
     display: block;
     justify-content: center;
