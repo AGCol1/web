@@ -178,7 +178,7 @@ body {
 
 @media (max-width: 600px) {
     .heading_name {
-        scale: 0.90; 
+        scale: 0.85; 
     }
 
     .personal_projects {
