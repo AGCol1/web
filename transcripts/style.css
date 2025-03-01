@@ -72,3 +72,8 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+p {
+    font-size: 0.8rem; 
+    font-style: italic
+}
