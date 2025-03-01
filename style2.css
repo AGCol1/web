@@ -25,6 +25,12 @@ p10 {
     height: 100vh; 
     flex-wrap: wrap; 
     gap: 0.6rem; 
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
 }
 
 .home_box {
@@ -37,22 +43,6 @@ p10 {
     box-sizing: border-box;
 }
 
-.home_about {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh; 
-    flex-wrap: wrap; 
-    gap: 0.6rem; 
-    background: darkgray; 
-    padding: 2rem; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 540px; 
-    box-sizing: border-box; 
-}
 
 .heading_name {
     color: #fff;
