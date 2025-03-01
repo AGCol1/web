@@ -1,3 +1,11 @@
+p10 {
+    font-size: 4rem; 
+    color: white; 
+    font-style: italic; 
+    align-self: center;
+}
+
+
 @keyframes animation_opacity {
     0% { 
         opacity: 0; 
@@ -10,7 +18,40 @@
 }
 
 .container {
-    justify-content: space-evenly;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-wrap: wrap; 
+    gap: 0.6rem; 
+}
+
+.home_box {
+    background: lightgrey;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    box-sizing: border-box;
+}
+
+.home_about {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+    flex-wrap: wrap; 
+    gap: 0.6rem; 
+    background: darkgray; 
+    padding: 2rem; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 540px; 
+    box-sizing: border-box; 
 }
 
 .heading_name {
@@ -68,62 +109,7 @@ body {
     background-color: #ffffff;
 }
 
-.about-me {
-    position: absolute; 
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
-.school_projects {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: rgb(61, 65, 62);
-    animation: animation_opacity 3s;
-    position: absolute; 
-    top: 35%;
-    left: 36%; 
-    border-radius: 25px;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    height: 25% 
-
-}
-
-.personal_projects {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: rgb(61, 65, 62);
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 25px;
-    width: 12%;
-    box-sizing: border-box;
-    margin: 10px 0;
-    animation: animation_opacity 3s;
-    position: absolute;
-    top: 35%;
-    left: 49%;
-    height: 25%; 
-    animation: animation_opacity 3s;
-
-}
-
-.personal_projects:hover {
-    cursor: pointer; 
-    transition: all 0.1s;
-    transform: translateY(-3px);
-    box-shadow: 0px 3px 6px rgb(250, 242, 242, 0.069);
-}
-
-.personal_projects:active {
-    cursor: pointer; 
-    scale: 0.95; 
-    transform: all 0.1s;
-}
 
 .buttons:hover {
     cursor: pointer; 
