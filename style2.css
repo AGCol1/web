@@ -9,6 +9,10 @@
     }
 }
 
+.container {
+    justify-content: space-evenly;
+}
+
 .heading_name {
     color: #fff;
     font-size: 3rem;
