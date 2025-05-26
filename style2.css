@@ -1,18 +1,19 @@
 p10 {
-    font-size: 4rem; 
-    color: white; 
-    font-style: italic; 
+    font-size: 4rem;
+    color: white;
+    font-style: italic;
     align-self: center;
 }
 
 
 @keyframes animation_opacity {
-    0% { 
-        opacity: 0; 
+    0% {
+        opacity: 0;
         transform: translateY(100%);
     }
-    100% { 
-        opacity: 1; 
+
+    100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -22,15 +23,15 @@ p10 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
-    flex-wrap: wrap; 
-    gap: 0.6rem; 
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 0.6rem;
 
 }
 
 a {
     text-decoration: none;
-    color: inherit; 
+    color: inherit;
 }
 
 .home_box {
@@ -52,12 +53,16 @@ a {
     top: 2%;
     left: 50%;
     transform: translateX(-50%);
-    position: absolute; 
+    position: absolute;
 }
 
 body {
-    background: rgb(15, 17, 15) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
+
 
 .code_input {
     font-family: 'Courier New', Courier, monospace;
@@ -67,7 +72,7 @@ body {
     animation: animation_opacity 3s;
 }
 
-.box { 
+.box {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -77,9 +82,9 @@ body {
     padding: 10px;
     border-radius: 25px;
     box-sizing: border-box;
-    margin: 10px 0; 
+    margin: 10px 0;
     color: #fff;
-    width: auto; 
+    width: auto;
     height: auto;
 }
 
@@ -102,14 +107,14 @@ body {
 
 
 .buttons:hover {
-    cursor: pointer; 
+    cursor: pointer;
     transition: all 0.1s;
     transform: translateY(-3px);
     box-shadow: 0px 3px 6px rgb(250, 242, 242, 0.069);
 }
 
 .buttons:active {
-    cursor: pointer; 
+    cursor: pointer;
     transition: all 0.1s;
     transform: translateY(-3px);
     box-shadow: 0px 3px 6px rgb(250, 242, 242, 0.069);
@@ -133,13 +138,25 @@ body {
 }
 
 @keyframes typing {
-    from { width: 0ch; }
-    to { width: 14ch; } 
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 14ch;
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: white; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
 }
 
 #animated-text {
@@ -152,19 +169,71 @@ body {
 
 .warning {
     color: red;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
 }
 
 
 @media (max-width: 600px) {
     .heading_name {
-        scale: 0.85; 
+        scale: 0.85;
     }
 
     .personal_projects {
-        display: flex; 
+        display: flex;
     }
+
     .school_projects {
-        display: center; 
+        display: center;
+    }
+}
+
+.loading {
+    max-width: 50%;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loading__author {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: rgba(189, 189, 189, 1);
+    margin: 0.6rem 0 2rem 0;
+    display: block;
+}
+
+.loading__anim {
+    width: 35px;
+    height: 35px;
+}
+
+.loading__anim {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+}
+
+.loading__anim {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 5px solid rgba(189, 189, 189, 0.25);
+}
+
+.loading__anim {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid rgba(189, 189, 189, 0.25);
+    border-left-color: rgba(3, 155, 229, 1);
+    border-top-color: rgba(3, 155, 229, 1);
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn)
     }
 }
