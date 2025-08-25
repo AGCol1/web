@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="</div>UTF-8">
     <title>Alfie - My Portfolio</title>
@@ -13,34 +14,48 @@
             font-family: 'Roboto', sans-serif;
             overflow-x: hidden;
         }
+
         .cartoon-dev {
             width: 180px;
-            margin: 20px auto 0; /* Reduced margin */
+            margin: 20px auto 0;
+            /* Reduced margin */
             display: block;
             animation: float 3s ease-in-out infinite;
         }
+
         @keyframes float {
-            0%, 100% { transform: translateY(0);}
-            50% { transform: translateY(-20px);}
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
+
         .section {
-            min-height: 60vh; /* Reduced from 100vh */
+            min-height: 60vh;
+            /* Reduced from 100vh */
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
             transform: translateY(60px) scale(0.98);
-            transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+            transition: opacity 0.7s cubic-bezier(.4, 0, .2, 1), transform 0.7s cubic-bezier(.4, 0, .2, 1);
             position: relative;
         }
+
         .section.visible {
             opacity: 1;
             transform: translateY(0) scale(1);
         }
+
         .bubble {
             background: #fff;
             border-radius: 30px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
             padding: 40px 32px;
             max-width: 480px;
             text-align: center;
@@ -49,6 +64,7 @@
             font-family: 'Fredoka One', cursive;
             position: relative;
         }
+
         .bubble:after {
             content: '';
             position: absolute;
@@ -58,19 +74,22 @@
             border-width: 20px 30px 0 30px;
             border-style: solid;
             border-color: #fff transparent transparent transparent;
-            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.08));
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
         }
+
         .bubble h2 {
             margin: 0 0 10px 0;
             font-size: 2.2rem;
             color: #2a7be4;
         }
+
         .bubble p {
             margin: 0;
             font-size: 1.2rem;
             color: #444;
             font-family: 'Roboto', sans-serif;
         }
+
         /* Fun animated background shapes */
         .shape {
             position: absolute;
@@ -79,13 +98,44 @@
             z-index: 0;
             animation: moveShape 12s linear infinite alternate;
         }
-        .shape1 { width: 180px; height: 180px; background: #ffb6b9; top: 10%; left: 5%; animation-delay: 0s;}
-        .shape2 { width: 120px; height: 120px; background: #f7d794; top: 60%; left: 80%; animation-delay: 2s;}
-        .shape3 { width: 90px; height: 90px; background: #70a1ff; top: 80%; left: 10%; animation-delay: 4s;}
-        @keyframes moveShape {
-            0% { transform: translateY(0) scale(1);}
-            100% { transform: translateY(-40px) scale(1.1);}
+
+        .shape1 {
+            width: 180px;
+            height: 180px;
+            background: #ffb6b9;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
         }
+
+        .shape2 {
+            width: 120px;
+            height: 120px;
+            background: #f7d794;
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .shape3 {
+            width: 90px;
+            height: 90px;
+            background: #70a1ff;
+            top: 80%;
+            left: 10%;
+            animation-delay: 4s;
+        }
+
+        @keyframes moveShape {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+
+            100% {
+                transform: translateY(-40px) scale(1.1);
+            }
+        }
+
         /* Arrow styles */
         .down-arrow {
             display: flex;
@@ -102,72 +152,188 @@
             position: relative;
             z-index: 2;
         }
+
         .down-arrow svg {
             width: 32px;
             height: 32px;
             fill: #2a7be4;
             transition: transform 0.2s;
         }
+
         .down-arrow:hover svg {
             transform: translateY(4px) scale(1.1);
             fill: #185ca1;
         }
     </style>
 </head>
+
 <body>
     <div class="shape shape1"></div>
     <div class="shape shape2"></div>
     <div class="shape shape3"></div>
     <!-- Cartoon Developer SVG -->
     <svg class="cartoon-dev" viewBox="0 0 180 180" fill="none">
-        <ellipse cx="90" cy="90" rx="80" ry="80" fill="#fff"/>
-        <ellipse cx="90" cy="110" rx="55" ry="45" fill="#f7d794"/>
-        <ellipse cx="90" cy="80" rx="45" ry="40" fill="#ffeaa7"/>
-        <ellipse cx="70" cy="80" rx="7" ry="10" fill="#222"/>
-        <ellipse cx="110" cy="80" rx="7" ry="10" fill="#222"/>
-        <ellipse cx="90" cy="100" rx="15" ry="8" fill="#fff"/>
-        <ellipse cx="90" cy="102" rx="10" ry="4" fill="#222"/>
-        <rect x="60" y="130" width="60" height="20" rx="10" fill="#2a7be4"/>
-        <rect x="80" y="150" width="20" height="10" rx="5" fill="#2a7be4"/>
-        <rect x="40" y="120" width="10" height="30" rx="5" fill="#2a7be4"/>
-        <rect x="130" y="120" width="10" height="30" rx="5" fill="#2a7be4"/>
+        <ellipse cx="90" cy="90" rx="80" ry="80" fill="#fff" />
+        <ellipse cx="90" cy="110" rx="55" ry="45" fill="#f7d794" />
+        <ellipse cx="90" cy="80" rx="45" ry="40" fill="#ffeaa7" />
+        <ellipse cx="70" cy="80" rx="7" ry="10" fill="#222" />
+        <ellipse cx="110" cy="80" rx="7" ry="10" fill="#222" />
+        <ellipse cx="90" cy="100" rx="15" ry="8" fill="#fff" />
+        <ellipse cx="90" cy="102" rx="10" ry="4" fill="#222" />
+        <rect x="60" y="130" width="60" height="20" rx="10" fill="#2a7be4" />
+        <rect x="80" y="150" width="20" height="10" rx="5" fill="#2a7be4" />
+        <rect x="40" y="120" width="10" height="30" rx="5" fill="#2a7be4" />
+        <rect x="130" y="120" width="10" height="30" rx="5" fill="#2a7be4" />
     </svg>
 
     <section class="section" id="intro">
         <div class="bubble">
             <h2>Hello! 👋</h2>
-            <p>I'm Alfie, a Software Developer currently in my second year of college studying Computer Science, Mathematics & Design Technology.</p>
+            <p>I'm Alfie, a Software Developer currently in my second year of college studying Computer Science,
+                Mathematics & Design Technology.</p>
         </div>
     </section>
     <button class="down-arrow" data-next="#skills" aria-label="Scroll to skills">
-        <svg viewBox="0 0 24 24"><path d="M12 16.5l-8-8 1.41-1.42L12 13.67l6.59-6.59L20 8.5z"/></svg>
+        <svg viewBox="0 0 24 24">
+            <path d="M12 16.5l-8-8 1.41-1.42L12 13.67l6.59-6.59L20 8.5z" />
+        </svg>
     </button>
     <section class="section" id="skills">
         <div class="bubble">
             <h2>💻 Coding is my specialty</h2>
-            <p>I build robust, interactive web apps as well as professional discord applications to suit any of your needs. </p>
+            <p>I build robust, interactive web apps as well as professional discord applications to suit any of your
+                needs. </p>
         </div>
     </section>
     <button class="down-arrow" data-next="#projects" aria-label="Scroll to projects">
-        <svg viewBox="0 0 24 24"><path d="M12 16.5l-8-8 1.41-1.42L12 13.67l6.59-6.59L20 8.5z"/></svg>
+        <svg viewBox="0 0 24 24">
+            <path d="M12 16.5l-8-8 1.41-1.42L12 13.67l6.59-6.59L20 8.5z" />
+        </svg>
     </button>
     <section class="section" id="projects">
         <div class="bubble">
             <h2>🚀 Projects</h2>
-            <p>I've developed interactive web apps and custom Discord applications, delivering solutions tailored to unique needs and ideas.</p>
+            <p>I've developed interactive web apps and custom Discord applications, delivering solutions tailored to
+                unique needs and ideas.</p>
+            <div style="display:flex;flex-direction:column;gap:14px;align-items:center;margin-top:20px;">
+                <div style="display:flex;gap:18px;justify-content:center;width:100%;">
+                    <button id="show-project-btn"
+                        style="flex:1 1 40%;min-width:120px;padding:12px 28px;font-size:1.1rem;background:#2a7be4;color:#fff;border:none;border-radius:20px;cursor:pointer;box-shadow:0 4px 16px rgba(42,123,228,0.12);transition:transform 0.18s, box-shadow 0.18s;">
+                        Show Example Project
+                    </button>
+                    <button id="show-discord-btn"
+                        style="flex:1 1 40%;min-width:120px;padding:12px 28px;font-size:1.1rem;background:#70a1ff;color:#fff;border:none;border-radius:20px;cursor:pointer;box-shadow:0 4px 16px rgba(112,161,255,0.12);transition:transform 0.18s, box-shadow 0.18s;">
+                        Discord Bot Demo
+                    </button>
+                </div>
+                <div style="display:flex;gap:18px;justify-content:center;width:100%;">
+                    <button id="show-webapp-btn"
+                        style="flex:1 1 40%;min-width:120px;padding:12px 28px;font-size:1.1rem;background:#f7d794;color:#2a7be4;border:none;border-radius:20px;cursor:pointer;box-shadow:0 4px 16px rgba(247,215,148,0.12);transition:transform 0.18s, box-shadow 0.18s;">
+                        Web App Demo
+                    </button>
+                    <button id="show-design-btn"
+                        style="flex:1 1 40%;min-width:120px;padding:12px 28px;font-size:1.1rem;background:#ffb6b9;color:#fff;border:none;border-radius:20px;cursor:pointer;box-shadow:0 4px 16px rgba(255,182,185,0.12);transition:transform 0.18s, box-shadow 0.18s;">
+                        Design Project
+                    </button>
+                </div>
+            </div>
+            <div id="project-popup"
+                style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.8);background:#fff;border-radius:24px;box-shadow:0 12px 48px rgba(0,0,0,0.18);padding:32px 28px;z-index:1001;min-width:280px;max-width:90vw;text-align:left;opacity:0;transition:opacity 0.3s, transform 0.3s;">
+                <h3 style="margin-top:0;color:#2a7be4;">Portfolio Website</h3>
+                <p style="color:#444;">Nothing to see here yet...</a></p>
+                <button id="close-project-btn"
+                    style="margin-top:18px;padding:8px 18px;font-size:1rem;background:#f7d794;color:#2a7be4;border:none;border-radius:16px;cursor:pointer;">Close</button>
+            </div>
+            <div id="discord-popup"
+                style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.8);background:#fff;border-radius:24px;box-shadow:0 12px 48px rgba(0,0,0,0.18);padding:32px 28px;z-index:1001;min-width:280px;max-width:90vw;text-align:left;opacity:0;transition:opacity 0.3s, transform 0.3s;">
+                <h3 style="margin-top:0;color:#70a1ff;">Discord Bot</h3>
+                <p style="color:#444;">Nothing to see here yet...</a></p> <button id="close-discord-btn"
+                    style="margin-top:18px;padding:8px 18px;font-size:1rem;background:#f7d794;color:#70a1ff;border:none;border-radius:16px;cursor:pointer;">Close</button>
+            </div>
+            <div id="webapp-popup"
+                style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.8);background:#fff;border-radius:24px;box-shadow:0 12px 48px rgba(0,0,0,0.18);padding:32px 28px;z-index:1001;min-width:280px;max-width:90vw;text-align:left;opacity:0;transition:opacity 0.3s, transform 0.3s;">
+                <h3 style="margin-top:0;color:#f7d794;">Web App Demo</h3>
+                <p style="color:#444;">Nothing to see here yet...</a></p> <button id="close-webapp-btn"
+                    style="margin-top:18px;padding:8px 18px;font-size:1rem;background:#2a7be4;color:#fff;border:none;border-radius:16px;cursor:pointer;">Close</button>
+            </div>
+            <div id="design-popup"
+                style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.8);background:#fff;border-radius:24px;box-shadow:0 12px 48px rgba(0,0,0,0.18);padding:32px 28px;z-index:1001;min-width:280px;max-width:90vw;text-align:left;opacity:0;transition:opacity 0.3s, transform 0.3s;">
+                <h3 style="margin-top:0;color:#ffb6b9;">Design Project</h3>
+                <p style="color:#444;">Nothing to see here yet...</a></p> <button id="close-design-btn"
+                    style="margin-top:18px;padding:8px 18px;font-size:1rem;background:#2a7be4;color:#fff;border:none;border-radius:16px;cursor:pointer;">Close</button>
+            </div>
+            <div id="popup-backdrop"
+                style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.18);z-index:1000;">
+            </div>
         </div>
+        <script>
+            // Animate buttons on hover
+            function animateBtn(btn) {
+                btn.addEventListener('mouseenter', () => {
+                    btn.style.transform = 'scale(1.08)';
+                    btn.style.boxShadow = '0 8px 32px rgba(42,123,228,0.18)';
+                });
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = '';
+                    btn.style.boxShadow = '';
+                });
+            }
+            animateBtn(document.getElementById('show-project-btn'));
+            animateBtn(document.getElementById('show-discord-btn'));
+            animateBtn(document.getElementById('show-webapp-btn'));
+            animateBtn(document.getElementById('show-design-btn'));
+
+            // Popup logic
+            const popups = {
+                'show-project-btn': 'project-popup',
+                'show-discord-btn': 'discord-popup',
+                'show-webapp-btn': 'webapp-popup',
+                'show-design-btn': 'design-popup'
+            };
+            const backdrop = document.getElementById('popup-backdrop');
+
+            Object.keys(popups).forEach(btnId => {
+                const btn = document.getElementById(btnId);
+                const popup = document.getElementById(popups[btnId]);
+                btn.addEventListener('click', () => {
+                    popup.style.display = 'block';
+                    backdrop.style.display = 'block';
+                    setTimeout(() => {
+                        popup.style.opacity = '1';
+                        popup.style.transform = 'translate(-50%,-50%) scale(1)';
+                    }, 10);
+                });
+                const closeBtn = popup.querySelector('button[id^="close-"]');
+                closeBtn.addEventListener('click', closePopup);
+            });
+
+            function closePopup() {
+                document.querySelectorAll('#projects .bubble > div[id$="popup"]').forEach(popup => {
+                    popup.style.opacity = '0';
+                    popup.style.transform = 'translate(-50%,-50%) scale(0.8)';
+                    setTimeout(() => {
+                        popup.style.display = 'none';
+                        backdrop.style.display = 'none';
+                    }, 300);
+                });
+            }
+            backdrop.addEventListener('click', closePopup);
+        </script>
     </section>
     <button class="down-arrow" data-next="#contact" aria-label="Scroll to contact">
-        <svg viewBox="0 0 24 24"><path d="M12 16.5l-8-8 1.41-1.42L12 13.67l6.59-6.59L20 8.5z"/></svg>
+        <svg viewBox="0 0 24 24">
+            <path d="M12 16.5l-8-8 1.41-1.42L12 13.67l6.59-6.59L20 8.5z" />
+        </svg>
     </button>
     <section class="section" id="contact">
         <div class="bubble">
             <h2>🌈 Let's Connect!</h2>
             <p>
-                Want to work together? 
+                Want to work together?
                 <a href="mailto:agcolclough1@outlook.com" style="color:#2a7be4;text-decoration:underline;">Email me</a>
-                or message me on 
-                <a href="https://t.me/alfie_scfc" target="_blank" rel="noopener" style="color:#2a7be4;text-decoration:underline;">Telegram</a>!
+                or message me on
+                <a href="https://t.me/alfie_scfc" target="_blank" rel="noopener"
+                    style="color:#2a7be4;text-decoration:underline;">Telegram</a>!
             </p>
         </div>
     </section>
@@ -191,7 +357,7 @@
 
         // Smooth scroll for down arrows
         document.querySelectorAll('.down-arrow').forEach(btn => {
-            btn.addEventListener('click', function() {
+            btn.addEventListener('click', function () {
                 const next = document.querySelector(this.getAttribute('data-next'));
                 if (next) {
                     next.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -200,4 +366,5 @@
         });
     </script>
 </body>
+
 </html>
